@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Zeus</title>
+</head>
+<body>
+
+<header>
+    <div class="menu">
+        <img src="img/zs.jpeg" alt="Logo" class="logo-header">
+        <span>Zeus</span>
+        <span class="highlight">Criatividade</span>
+    </div>
+    <div class="buttons">
+        <button>Sobre</button>
+        <button>Projetos</button>
+        <button>Contato</button>
+    </div>
+</header>
+
+<main>
+    <div class="content-box">
+        <img src="img/zs.jpeg" alt="Logo Grande" class="logo-large">
+        <div class="text">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou Zeus, um desenvolvedor apaixonado por criar soluções inovadoras e eficientes. 
+                Com experiência em diversas tecnologias e uma forte dedicação para aprender e evoluir,
+                estou sempre em busca de novos desafios para aprimorar minhas habilidades e entregar projetos de alta qualidade.
+            </p>
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9f9;
+        color: #808080;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+    }
+
+    header img {
+        height: 40px;
+        margin-right: 25px; 
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .highlight {
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffcc00;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        background-color: #444;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .buttons button:hover {
+        background-color: #666;
+    }
+
+    .content-box {
+        background-color: #444;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 1200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-large {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        margin-right: 20px;
+        flex: 1;
+    }
+
+    .content-box .text {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .content-box .text h2 {
+        margin: 0;
+        font-size: 28px;
+        color: #f4f4f4;
+    }
+
+    .content-box .text p {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #d1d1d1;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 20px;
+        }
+
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .menu {
+            margin-bottom: 10px;
+        }
+
+        .content-box {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo-large {
+            margin-right: 0;
+            margin-bottom: 20px;
+            height: 150px;
+            width: 150px;
+        }
+
+        .content-box .text {
+            max-width: 100%;
+        }
+    }
+</style>
+
+</body>
+</html>
